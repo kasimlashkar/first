@@ -17,8 +17,8 @@
                     
                     <form action="process" method="post">
                     @csrf
-                       <input type="text" class="form-control" name="name" id="name" @empty(old('name')) placeholder="Enter Name" @endempty value="{{old('name')}}">
-                       <span style="color:red">@error('name') {{$message}}@enderror</span>
+                       <input type="email" class="form-control" name="email" id="email" @empty(old('email')) placeholder="Enter email" @endempty value="{{old('email')}}">
+                       <span style="color:red">@error('email') {{$message}}@enderror</span>
                        <br>
                        <br>
                        <input type="password" class="form-control" name="password" id="password" placeholder="Enter Password">
