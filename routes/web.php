@@ -17,5 +17,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::post('process',[submit::class,'process']);
+Route::post('process',[signin::class,'process']);
 Route::view('login','home');
